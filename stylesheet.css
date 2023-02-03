@@ -6,6 +6,11 @@ body {
     position: absolute;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 .highlight {
     background-color: navy;
 }
@@ -13,6 +18,18 @@ body {
 .top {
     width: 100vw;
     height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-element {
+    width: 20vw;
+    height: 100%;
+    padding-top: 2.5vh;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+
 }
 
 .content {
