@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, serif;
     background-color: black;
     color: white;
     margin: 0;
@@ -14,6 +15,26 @@ p {
 h1 {
     padding: 0;
     margin: 0;
+}
+
+a:link {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
 }
 
 /* TODO: Navbar bei nur 1920x1080 fixen. */
@@ -34,7 +55,6 @@ h1 {
     color: white;
     text-decoration: none;
     text-align: center;
-    font-family: Arial, monospace;
     font-size: xxx-large;
 }
 
@@ -60,7 +80,6 @@ h1 {
 }
 
 .content-text-boxed {
-    font-family: Arial, serif;
     font-size: 30px;
     background-color: #111111bb;
     border: 10px solid #11111133;
@@ -78,6 +97,26 @@ h1 {
     height: 20vh;
     background-color: #111111;
     color: #444444;
+}
+
+.imprint-gh {
+    padding-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.imprint-gh-icon {
+    margin-right: 1vw;
+    width: 2vw;
+}
+
+.imprint-gh-issues {
+    padding-top: 1vh;
+}
+
+.imprint-copyright {
+    text-align: center;
+    padding-top: 4vh;
 }
 
 /* Debugging purposes :D */
