@@ -17,10 +17,12 @@ p {
     display: flex;
     justify-content: space-evenly;
     background-color: #111111;
+    overflow: hidden;
+    border: none;
 }
 
 .top-element {
-    width: 20vw;
+    width: calc(90vw / 3);
     height: 100%;
     padding-top: 20px;
     color: white;
@@ -28,6 +30,10 @@ p {
     text-align: center;
     font-family: Arial, monospace;
     font-size: xxx-large;
+}
+
+.top-icon {
+    width: 10vw;
 }
 
 .content {
