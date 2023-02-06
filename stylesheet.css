@@ -11,6 +11,12 @@ p {
     margin: 0;
 }
 
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+/* TODO: Navbar bei nur 1920x1080 fixen. */
 .top {
     width: 100vw;
     height: 100px;
@@ -37,19 +43,34 @@ p {
 }
 
 .content {
-    width: 100vw;
     height: calc(100vh - 100px);
     background-color: #111111;
-}
-
-.content-background-img {
     background-image: url('assets/minecraft.png');
-    z-index: -10;
-    height: 100%;
     width: auto;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    padding-top: 40vh;
+}
+
+.content-main-info {
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-text-boxed {
+    font-family: Arial, serif;
+    font-size: 30px;
+    background-color: #111111bb;
+    border: #111111 solid;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.content-text-heading {
+    font-size: 100px;
 }
 
 .imprint {
@@ -59,6 +80,7 @@ p {
     color: #444444;
 }
 
+/* Debugging purposes :D */
 .highlight {
     background-color: navy;
 }
