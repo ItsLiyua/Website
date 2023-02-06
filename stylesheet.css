@@ -37,6 +37,7 @@ p {
 }
 
 .content-background-img {
+    background-image: url('assets/minecraft.png');
     z-index: -10;
     height: 100%;
     width: auto;
