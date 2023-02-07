@@ -1,0 +1,23 @@
+.imprint {
+    height: 100vh;
+}
+
+.imprint-gh {
+    padding-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.imprint-gh-icon {
+    margin-right: 1vw;
+    width: 2vw;
+}
+
+.imprint-gh-issues {
+    padding-top: 1vh;
+}
+
+.imprint-copyright {
+    text-align: center;
+    padding-top: 4vh;
+}
