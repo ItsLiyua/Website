@@ -53,13 +53,15 @@ a:active {
 }
 
 .content {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
+    width: auto;
+    /* TODO: Fix height when on mobile view. */
     background-color: #111111;
     background-image: url('assets/images/minecraft.png');
-    width: auto;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    user-select: none;
 }
 
 .content-main-info {
@@ -67,6 +69,7 @@ a:active {
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
+    /* Note: Things are becoming goofy when resizing to 9:16 aspect ratio */
 }
 
 .content-text-boxed {
@@ -79,7 +82,7 @@ a:active {
 }
 
 .content-text-heading {
-    font-size: 100px;
+    font-size: 7vh;
 }
 
 .imprint {
