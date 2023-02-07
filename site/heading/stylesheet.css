@@ -1,0 +1,13 @@
+.top-element {
+    width: calc(90vw / 3);
+    height: 100%;
+    padding-top: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.top-icon {
+    width: 10vw;
+}

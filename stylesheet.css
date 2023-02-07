@@ -17,6 +17,10 @@ h1 {
     margin: 0;
 }
 
+iframe {
+    border: none;
+}
+
 a:link {
     color: #dddddd;
     text-decoration: none;
@@ -48,24 +52,10 @@ a:active {
     border: none;
 }
 
-.top-element {
-    width: calc(90vw / 3);
-    height: 100%;
-    padding-top: 20px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: xxx-large;
-}
-
-.top-icon {
-    width: 10vw;
-}
-
 .content {
     height: calc(100vh - 100px);
     background-color: #111111;
-    background-image: url('assets/minecraft.png');
+    background-image: url('assets/images/minecraft.png');
     width: auto;
     background-size: cover;
     background-position: center center;
