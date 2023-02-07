@@ -70,7 +70,7 @@ a:active {
 }
 
 .content-text-boxed {
-    font-size: 30px;
+    font-size: 3vh;
     background-color: #111111bb;
     border: 10px solid #11111133;
     border-radius: 15px;
