@@ -36,11 +36,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active {
-    color: white;
-    text-decoration: none;
-}
-
 /* TODO: Navbar bei nur 1920x1080 fixen. */
 .top {
     width: 100vw;
