@@ -1,0 +1,17 @@
+.content-voxels {
+    background-color: #111111;
+    background-image: none;
+    padding-top: 15vh;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-voxels-wikipedia{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.content-voxels-text {
+    background-image: none;
+}
