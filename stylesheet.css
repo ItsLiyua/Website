@@ -54,6 +54,7 @@ a:hover {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     user-select: none;
 }
 
