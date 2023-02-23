@@ -24,6 +24,10 @@ h1 {
     border-radius: 10px;
 }
 
+.content-divs {
+    padding-bottom: 10vh;
+}
+
 .content-voxels-wikipedia {
     text-align: center;
     margin: 0 10vw 10vh 10vw;
@@ -34,4 +38,17 @@ h1 {
 
 .content-voxels-text {
     background-image: none;
+}
+
+.content-voxels-image {
+    margin-top: 5vh;
+}
+
+.content-image {
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3vh;
+    color: #cccccc;
 }

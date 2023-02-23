@@ -2,8 +2,12 @@
     height: 100vh;
 }
 
+.text {
+    font-size: 7vh;
+}
+
 .imprint-gh {
-    padding-top: 4vh;
+    padding-top: 20vh;
     display: flex;
     justify-content: center;
 }
@@ -14,7 +18,7 @@
 }
 
 .imprint-gh-issues {
-    padding-top: 1vh;
+    padding-top: 5vh;
 }
 
 .imprint-copyright {

@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, serif;
     background-color: black;
     color: white;
     margin: 0;
@@ -56,6 +55,11 @@ a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     user-select: none;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 2vh;
 }
 
 .imprint {
