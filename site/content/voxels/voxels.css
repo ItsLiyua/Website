@@ -1,15 +1,35 @@
-.content-voxels {
-    background-color: #111111;
-    background-image: none;
-    padding-top: 15vh;
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+h1 {
+    text-decoration: #f02800 underline;
+    padding-bottom: 3vh;
 }
 
-.content-voxels-wikipedia{
+.bg {
+    background-color: #111111;
+    background-image: url('https://assets.rockpapershotgun.com/images/2019/08/Minecraft-shaders-1.14-Sildurs-Vibrant-Shaders.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content-voxels {
+    background-color: #111111aa;
+    background-image: none;
+    backdrop-filter: blur(5px);
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 70vw;
+    margin: 1vh auto;
+    border-radius: 10px;
+}
+
+.content-voxels-wikipedia {
     text-align: center;
-    margin-bottom: 10vh;
+    margin: 0 10vw 10vh 10vw;
+    padding: 1vh 1vh 1vh 1vh;
+    background: #f2080088;
+    border-radius: 7px;
 }
 
 .content-voxels-text {

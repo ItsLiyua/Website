@@ -4,15 +4,29 @@
 
 ### `<!DOCTYPE HTML>`:
 
+Metainformation für den Browser, die angibt, dass es sich um eine HTML Datei handelt.
+
 ### `<meta charset="UTF-8">`:
+
+Metainformationen für den HTML interpreter, dass nicht nur ASCII-Zeichen, sondern auch UTF-8 Zeichen verwendet werden
+können.
 
 ### ` <title/>`:
 
+Der Titel, der im Browsertab angezeigt wird.
+
 ### `<link>`:
+
+`link` wird zum Einbinden eines css stylesheets verwendet.
 
 ### `<a/>`:
 
+Ein `a`-Tag wird verwendet, um auf eine andere Seite, intern wie extern zu verlinken, wenn der Inhalt angeklickt wird.
+In den meisten Fällen ist der Inhalt ein Text, kann aber auch ein Bild oder anderes Element sein.
+
 ### `<img>`:
+
+Wird verwendet, um ein Bild einzubinden.
 
 ### `<iframe/>`:
 
@@ -21,18 +35,23 @@ Ein iframe oder auch Inlineframe wird verwendet, um andere HTML-Elemente in eine
 ## Verwendetes CSS:
 
 ### Positionierung
+
 - `margin`: Der Abstand um ein Element.
 - `padding`: Der Abstand des Inhalts eines Elements zur Außenwand des Elements.
 - `position`: Die CSS-Positionierungsfunktion, die verwendet wird, um die Elemente im Elternelement
 
 ### Font Konfiguration
+
 - `font-family`: Die Schriftart, die wir für die Seite verwenden.
 - `font-size`: Die größe der Schrift auf der Seite.
 - `text-decoration`: Formatierungsanweisung für Texte (Unterstrichen, Fett, usw.)
 
 ### Farben
+
 - `color`: Die Farbe des Elements.
 - `background-color`: Die Hintergrundfarbe hinter einem Element.
+
+### Border
 
 > ## Klassen:
 > Klassen sind Möglichkeiten Elementen Attributen zuzuweisen, ohne diese Attribute typabhängig zu machen. Sie können

@@ -31,12 +31,12 @@ a:visited {
     text-decoration: none;
 }
 
+/* Link becomes brighter when hovering */
 a:hover {
     color: white;
     text-decoration: underline;
 }
 
-/* TODO: Navbar bei nur 1920x1080 fixen. */
 .top {
     width: 100vw;
     height: 100px;
@@ -50,7 +50,6 @@ a:hover {
 .content {
     min-height: calc(100vh - 100px);
     width: auto;
-    /* TODO: Fix height when on mobile view. */
     background-color: #111111;
     background-image: url('assets/images/minecraft.png');
     background-size: cover;
@@ -62,6 +61,7 @@ a:hover {
 .imprint {
     width: 100vw;
     height: 20vh;
+    margin-bottom: -1vh;
     background-color: #111111;
     color: #444444;
 }
