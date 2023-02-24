@@ -21,3 +21,12 @@
 .content-text-heading {
     font-size: 7vh;
 }
+
+.bg{
+    background-image: url('assets/images/background/screenshot_1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #111111;
+}
