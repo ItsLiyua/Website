@@ -43,12 +43,3 @@ h1 {
 .content-voxels-image {
     margin-top: 5vh;
 }
-
-.content-image {
-    width: 30vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.3vh;
-    color: #cccccc;
-}

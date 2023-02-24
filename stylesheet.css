@@ -69,3 +69,12 @@ a:hover {
 .highlight {
     background-color: navy;
 }
+
+.content-image {
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3vh;
+    color: #cccccc;
+}

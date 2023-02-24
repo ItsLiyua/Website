@@ -16,13 +16,47 @@
         <a href="https://www.khronos.org/opengl/wiki/Shader#:~:text=A%20Shader%20is%20a%20user,general%2C%20on%2DGPU%20computation"
            target="_blank">Khronos.org</a>
     </p>
-    <div class="text content-divs content-shading-intro">
+    <div class="text content-divs">
         <h1>An introduction to shading</h1>
         <p>
-
+            Shaders are programms written in GLSL (GL Shading Language) which is a dialect of the C programming
+            language. They are used to control the rendering process of 3D sceneries and are applied in multiple steps.
+            These are the shaders available for application during the rendering process:
         </p>
+        <ul>
+            <li>Vertex Shader (required)</li>
+            <li>Tessellation Shader</li>
+            <li>Geometry Shader</li>
+            <li>Fragment Shader (required)</li>
+            <li>Compute Shader</li>
+        </ul>
+        <p>
+            The shaders listed above are ordered in the way they are to be applied during the rendering process. The
+            following page however will only elaborate on the functionality of the Vertex and Fragment Shader, since the
+            others are optional.
+        </p>
+        <div class="content-divs content-shading-image">
+            <img class="content-image" style="width: 18vw;"
+                 src="https://3875234439-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LAK9UyzFQ1YYLFNUZNX%2F-LAKB-DQUH1vdJpebr5H%2F-LAKBFu4LUtHCyeKoQXu%2Frendering_pipeline_2.png?generation=1523995206169029&alt=media"
+                 alt="A visualization of the rendering process">
+            <p class="text content-image" style="width: 18vw;">
+                A flowchart demonstrating how the shader application pipeline might look
+            </p>
+        </div>
+    </div>
+    <div class="text content-divs">
+        <h1>Other steps in rendering</h1>
+        <p><b>Besides shaders there are also a few other important steps in the rendering pipeline which will be
+            explained below:</b></p>
+        <h2>Vertex and Index Lists</h2>
+        <h2>Rasterization</h2>
+        <h2>Frame Buffer</h2>
+    </div>
+    <div class="text content-divs">
+        <h1>Vertex and Fragment Shaders</h1>
     </div>
 </div>
+
 <iframe src="../../elements/imprint/imprint.html" title="Heading of the website" class="imprint"></iframe>
 </body>
 </html>
