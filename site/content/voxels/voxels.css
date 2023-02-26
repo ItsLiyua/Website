@@ -6,14 +6,6 @@ h1, h2 {
     background-image: url('https://assets.rockpapershotgun.com/images/2019/08/Minecraft-shaders-1.14-Sildurs-Vibrant-Shaders.png');
 }
 
-.content-voxels-wikipedia {
-    text-align: center;
-    margin: 0 10vw 10vh 10vw;
-    padding: 1vh 1vh 1vh 1vh;
+.content-quote {
     background: #f2080088;
-    border-radius: 7px;
-}
-
-.content-voxels-image {
-    margin-top: 5vh;
 }
