@@ -8,7 +8,7 @@ body {
     padding: 0;
     position: absolute;
     background-color: #111111;
-    background-image: var(--bg, none);
+    background-image: var(--bg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
