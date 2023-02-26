@@ -33,7 +33,7 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v3
         with:
-          find: "\\.\\.\/"
+          find: "\Q../\E"
           replace: "./"
           include: "**/*.css"
           regex: true
