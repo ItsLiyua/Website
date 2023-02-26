@@ -1,31 +1,9 @@
 h1, h2 {
     text-decoration: #10446f underline;
-    padding-bottom: 3vh;
 }
 
 .bg {
-    background-color: #111111;
     background-image: url('../../../assets/images/background/screenshot_3.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.content-shading {
-    background-color: #111111aa;
-    background-image: none;
-    backdrop-filter: blur(5px);
-    padding-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    width: 70vw;
-    margin: 1vh auto;
-    border-radius: 10px;
-}
-
-.content-divs {
-    padding-bottom: 10vh;
 }
 
 .content-shading-wikipedia {

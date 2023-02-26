@@ -1,0 +1,15 @@
+.content {
+    background-color: #111111aa;
+    background-image: none;
+    backdrop-filter: blur(5px);
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 70vw;
+    margin: 1vh auto;
+    border-radius: 10px;
+}
+
+.content-box {
+    padding-bottom: 10vh;
+}

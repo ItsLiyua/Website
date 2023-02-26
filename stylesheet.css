@@ -1,3 +1,7 @@
+h1, h2 {
+    padding-bottom: 3vh;
+}
+
 body {
     background-color: black;
     color: white;
