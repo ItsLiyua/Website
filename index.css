@@ -1,3 +1,7 @@
+:root {
+    --bg: url('assets/images/background/screenshot_1.png');
+}
+
 .text {
     font-size: 3vh;
 }
@@ -16,8 +20,4 @@
     border-radius: 15px;
     text-align: center;
     margin-bottom: 10vh;
-}
-
-.bg {
-    background-image: url('assets/images/background/screenshot_1.png');
 }

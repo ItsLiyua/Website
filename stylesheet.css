@@ -3,11 +3,16 @@ h1, h2 {
 }
 
 body {
-    background-color: black;
     color: white;
     margin: 0;
     padding: 0;
     position: absolute;
+    background-color: #111111;
+    background-image: var(--bg, none);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 p {
@@ -38,14 +43,6 @@ a:visited {
 a:hover {
     color: white;
     text-decoration: underline;
-}
-
-.bg {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #111111;
 }
 
 .top {

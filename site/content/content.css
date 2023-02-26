@@ -2,10 +2,6 @@ h1, h2 {
     text-decoration: var(--accent) underline;
 }
 
-.bg {
-    background-image: var(--bg);
-}
-
 .content {
     background-color: #111111aa;
     background-image: none;
