@@ -1,3 +1,11 @@
+h1, h2 {
+    text-decoration: var(--accent) underline;
+}
+
+.bg {
+    background-image: var(--bg);
+}
+
 .content {
     background-color: #111111aa;
     background-image: none;
@@ -16,6 +24,7 @@
 }
 
 .content-quote {
+    background: var(--accent-opaque);
     text-align: center;
     margin: 0 10vw 10vh 10vw;
     padding: 1vh 1vh 1vh 1vh;

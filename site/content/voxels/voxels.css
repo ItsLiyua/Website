@@ -1,11 +1,5 @@
-h1, h2 {
-    text-decoration: #f02800 underline;
-}
-
-.bg {
-    background-image: url('https://assets.rockpapershotgun.com/images/2019/08/Minecraft-shaders-1.14-Sildurs-Vibrant-Shaders.png');
-}
-
-.content-quote {
-    background: #f2080088;
+:root {
+    --bg:  url('https://assets.rockpapershotgun.com/images/2019/08/Minecraft-shaders-1.14-Sildurs-Vibrant-Shaders.png');
+    --accent: #f02800;
+    --accent-opaque: #f2080088;
 }

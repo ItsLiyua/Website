@@ -1,12 +1,5 @@
-h1, h2 {
-    text-decoration: #10446f underline;
+:root {
+    --bg: url('../../../assets/images/background/screenshot_3.png');
+    --accent: #10446f;
+    --accent-opaque: #10446f88;
 }
-
-.bg {
-    background-image: url('../../../assets/images/background/screenshot_3.png');
-}
-
-.content-quote {
-    background: #10446f88;
-}
-
