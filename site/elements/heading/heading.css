@@ -11,3 +11,8 @@
 .top-icon {
     width: 10vw;
 }
+
+.video {
+    height: 100vh;
+    margin-top: -15vh;
+}
