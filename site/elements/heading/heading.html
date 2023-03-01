@@ -9,12 +9,16 @@
 <body>
 <div class="top">
     <div class="text top-element top-icon">
-        <a class="top-icon" href="../../../index.html" target="_parent">
+        <a class="top-element"
+           href="../../../index.html"
+           target="_parent"
+           onmouseover="document.getElementById('icon-image').src='../../../assets/icon/furnace.png';"
+           onmouseout="document.getElementById('icon-image').src='../../../assets/icon/furnace_1_.png';">
             <img class="icon"
+                 id="icon-image"
                  src="../../../assets/icon/furnace_1_.png"
-                 alt="This webpage's home menu"
-                 onmouseover="this.src='../../../assets/icon/furnace.png';"
-                 onmouseout="this.src='../../../assets/icon/furnace_1_.png';">
+                 alt="This webpage's home menu">
+            <p class="text" style="margin-top: 0;">Home</p>
         </a>
     </div>
     <a class="text top-element" href="../../content/voxels/voxels.html" target="_parent">Voxels</a>

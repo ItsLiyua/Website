@@ -1,18 +1,16 @@
 .top-element {
-    width: calc(90vw / 3);
+    width: 25vw;
     height: 100%;
     padding-top: 15vh;
-    color: white;
-    text-decoration: none;
     text-align: center;
-    font-size: xxx-large;
 }
 
-.top-icon {
-    width: 10vw;
+.text {
+    font-size: xxx-large;
 }
 
 .icon {
     height: 100vh;
     margin-top: -15vh;
+    float: left;
 }
