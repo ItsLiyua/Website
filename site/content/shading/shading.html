@@ -46,12 +46,33 @@
         </div>
     </div>
     <div class="text content-box">
-        <h1>Other steps in rendering</h1>
-        <p><b>Besides shaders there are also a few other important steps in the rendering pipeline which will be
-            explained below:</b></p>
-        <h2>Vertex and Index Lists</h2>
-        <h2>Rasterization</h2>
-        <h2>Frame Buffer</h2>
+        <div>
+            <h1>Other steps in rendering</h1>
+            <p><b>Besides shaders there are also a few other important steps in the rendering pipeline which will be
+                explained below:</b></p>
+        </div>
+        <div>
+            <h2>Vertex and Index Lists</h2>
+            <p>
+                A Vertex List is a list of all vertices in the scene and contains each vertex only once to prevent
+                bloat. A Vertex List is generally very long, given that a simple object like a cube already contains
+                eight vertices. Generally, the more complex the Mesh the more vertices are there to be transmitted to
+                the GPU, the longer the list becomes.
+                <br><br>
+                An Index List always has a length of a multiple of three since it contains the data on which vertices
+                are to be connected to form a triangle. An Index List is helpful in minimizing required memory and
+                transfer times because an Index is an Integer while a vertex consists of three coordinates and
+                information on the vertexes color and it prevents duplicates in the Vertex List.
+            </p>
+        </div>
+        <div>
+            <h2>Rasterization</h2>
+            <p></p>
+        </div>
+        <div>
+            <h2>Frame Buffer</h2>
+            <p></p>
+        </div>
     </div>
     <div class="text content-box">
         <h1>Vertex and Fragment Shaders</h1>
