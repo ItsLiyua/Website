@@ -6,10 +6,10 @@
 }
 
 .text {
-    font-size: xxx-large;
+    font-size: 2.5vw;
 }
 
-.icon {
+#icon {
     height: 100vh;
     margin-top: -15vh;
     float: left;
