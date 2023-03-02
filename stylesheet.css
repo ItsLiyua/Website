@@ -6,6 +6,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     position: absolute;
     background-color: #111111;
     background-image: var(--bg);
