@@ -49,7 +49,6 @@ a:hover {
 .top {
     width: 100vw;
     height: 100px;
-    display: flex;
     justify-content: space-evenly;
     background-color: #111111;
     overflow: hidden;

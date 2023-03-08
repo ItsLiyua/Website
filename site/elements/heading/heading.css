@@ -1,16 +1,29 @@
 .top-element {
-    width: 25vw;
-    height: 100%;
-    padding-top: 15vh;
+    float: right;
+    height: 100vh;
+    width: 80vw;
+    vertical-align: top;
     text-align: center;
 }
 
-.text {
-    font-size: 50vh;
+.top-icon {
+    float: left;
+    height: 100vh;
+    width: 20vw;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #icon {
     height: 100vh;
-    margin-top: -15vh;
+    display: flex;
     float: left;
+}
+
+.text {
+    font-size: 60vh;
+    vertical-align: top;
 }
