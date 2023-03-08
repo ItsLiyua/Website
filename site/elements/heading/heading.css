@@ -26,4 +26,9 @@
 .text {
     font-size: 60vh;
     vertical-align: top;
+    padding-top: 5vh;
+}
+
+img:hover + p, p:hover {
+    text-decoration: underline white;
 }
