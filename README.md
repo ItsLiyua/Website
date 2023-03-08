@@ -38,7 +38,7 @@ Ein iframe oder auch Inlineframe wird verwendet, um andere HTML-Elemente in eine
 
 - `margin`: Der Abstand um ein Element.
 - `padding`: Der Abstand des Inhalts eines Elements zur Außenwand des Elements.
-- `position`: Die CSS-Positionierungsfunktion, die verwendet wird, um die Elemente im Elternelement
+- `position`: Die CSS-Positionierungsfunktion, die verwendet wird, um die Elemente im Elternelement anzuordnen.
 
 ### Font Konfiguration
 
