@@ -68,11 +68,23 @@
         </div>
         <div>
             <h2>Rasterization</h2>
-            <p></p>
+            <p>
+                Rasterization is the conversion of a 3D scene into a 2D pixelated image. After the rasterization of the
+                scene the following shaders are being applied pixel by pixel instead of per object in the scene.
+            </p>
         </div>
         <div>
             <h2>Frame Buffer</h2>
-            <p></p>
+            <p>
+                The frame buffer is the latest rendered image stored on the GPU. Whenever the screen refreshes it pulls
+                the currently buffered frame. This can also cause an effect known as screen tearing in which two
+                different frames are being displayed simultaneously, causing a tear in the middle of the display. To
+                prevent this a technology called VSync is utilized. This adds a second frame buffer. One frame buffer
+                contains a rendered image while the other is written to. Once the monitor pulls an image from the first
+                buffer the two buffers are swapped and another rendered image is ready immediately. This prevents the
+                GPU from updating the frame buffer while the monitor is pulling, which prevents screen tearing but in
+                turn also increasing latency.
+            </p>
         </div>
     </div>
     <div class="text content-box">
