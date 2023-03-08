@@ -3,3 +3,8 @@
     --accent: #10446f;
     --accent-opaque: #10446f88;
 }
+
+table {
+    border: none;
+    border-spacing: 20px;
+}
