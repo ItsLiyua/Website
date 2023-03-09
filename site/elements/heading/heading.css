@@ -17,18 +17,14 @@
     justify-content: space-evenly;
 }
 
-#icon {
-    height: 100vh;
-    display: flex;
-    float: left;
-}
-
 .text {
     font-size: 60vh;
     vertical-align: top;
     padding-top: 5vh;
 }
 
-img:hover + p, p:hover {
-    text-decoration: underline white;
+#icon-image {
+    height: 100vh;
+    display: flex;
+    float: left;
 }
