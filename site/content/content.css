@@ -15,13 +15,13 @@ h1, h2, h3 {
 }
 
 .content-box {
-    .text;
+. text;
     padding-top: 3vh;
     padding-bottom: 2vh;
 }
 
 .content-quote {
-    .content-box;
+. content-box;
     background: var(--accent-opaque);
     text-align: center;
     margin: 0 10vw 10vh 10vw;

@@ -12,11 +12,6 @@
     width: 20vw;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .text {
     font-size: 60vh;
     vertical-align: top;
