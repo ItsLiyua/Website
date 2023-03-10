@@ -86,6 +86,14 @@ function ptc(v) {
 }
 
 const SNAKE = new Snake(GRID_WIDTH / 2, GRID_HEIGHT / 2)
+const INPUT_QUEUE = []
+
+function updateDir() {
+    if (INPUT_QUEUE.length > 0) {
+        let dir = INPUT_QUEUE.shift()
+        SNAKE.head.dir = dir
+    }
+}
 
 function checkPickupCollision() {
     if (SNAKE.head.x === SNAKE.pickup.x && SNAKE.head.y === SNAKE.pickup.y) {
@@ -124,6 +132,7 @@ function draw() {
 }
 
 function loop() {
+    updateDir()
     SNAKE.move()
     checkPickupCollision()
     checkWallCollision()
@@ -135,7 +144,7 @@ function loop() {
 document.addEventListener('keypress', event => {
     function changeDir(newDir) {
         if (newDir[0] + SNAKE.head.dir[0] !== 0 || newDir[1] + SNAKE.head.dir[1] !== 0) {
-            SNAKE.head.dir = newDir
+            INPUT_QUEUE.push(newDir)
         }
     }
 
