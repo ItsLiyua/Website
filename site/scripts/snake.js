@@ -4,10 +4,10 @@ const GRID_WIDTH = 24
 const GRID_HEIGHT = 24
 const ELEMENT_SIZE = 32
 const Direction = {
-    UP: [0, -1],
-    DOWN: [0, 1],
-    LEFT: [-1, 0],
-    RIGHT: [1, 0]
+    UP: {x: 0, y: -1},
+    DOWN: {x: 0, y: 1},
+    LEFT: {x: -1, y: 0},
+    RIGHT: {x: 1, y: 0}
 }
 
 class Element {
@@ -40,8 +40,8 @@ class Head extends Element {
     }
 
     move() {
-        this.x += this.dir[0]
-        this.y += this.dir[1]
+        this.x += this.dir.x
+        this.y += this.dir.y
     }
 }
 
@@ -78,6 +78,7 @@ class Snake {
         this.head.x = GRID_WIDTH / 2
         this.head.y = GRID_HEIGHT / 2
         this.head.dir = Direction.RIGHT
+        score = 0
     }
 }
 
@@ -85,13 +86,42 @@ function ptc(v) {
     return v * ELEMENT_SIZE + 10
 }
 
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+let score = 0
+let highscore = 0
 const SNAKE = new Snake(GRID_WIDTH / 2, GRID_HEIGHT / 2)
 const INPUT_QUEUE = []
 
+function loadHighscore() {
+    if (getCookie('hs') !== '') {
+        highscore = parseInt(getCookie('hs'))
+    }
+}
+
 function updateDir() {
     if (INPUT_QUEUE.length > 0) {
-        let dir = INPUT_QUEUE.shift()
-        SNAKE.head.dir = dir
+        SNAKE.head.dir = INPUT_QUEUE.shift()
     }
 }
 
@@ -99,6 +129,8 @@ function checkPickupCollision() {
     if (SNAKE.head.x === SNAKE.pickup.x && SNAKE.head.y === SNAKE.pickup.y) {
         SNAKE.pickup.move()
         SNAKE.addTail()
+        score++
+        if (score > highscore) setCookie('hs', ++highscore, 365)
     }
 }
 
@@ -143,7 +175,7 @@ function loop() {
 
 document.addEventListener('keypress', event => {
     function changeDir(newDir) {
-        if (newDir[0] + SNAKE.head.dir[0] !== 0 || newDir[1] + SNAKE.head.dir[1] !== 0) {
+        if (newDir.x + SNAKE.head.dir.x !== 0 || newDir.y + SNAKE.head.dir.y !== 0) {
             INPUT_QUEUE.push(newDir)
         }
     }
@@ -164,4 +196,5 @@ document.addEventListener('keypress', event => {
     }
 })
 
+loadHighscore()
 loop()
