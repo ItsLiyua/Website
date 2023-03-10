@@ -2,8 +2,7 @@ const BOARD = document.getElementById('board')
 const BOARD_CTX = BOARD.getContext('2d')
 const GRID_WIDTH = 24
 const GRID_HEIGHT = 24
-const ELEMENT_WIDTH = BOARD.width / GRID_WIDTH
-const ELEMENT_HEIGHT = BOARD.height / GRID_HEIGHT
+const ELEMENT_SIZE = 32
 const Direction = {
     UP: [0, -1],
     DOWN: [0, 1],
@@ -71,15 +70,41 @@ class Snake {
 
     addTail() {
         let parent = this.tails.length === 0 ? this.head : this.tails[this.tails.length - 1];
-        this.tails.add(new Tail(parent))
+        this.tails.push(new Tail(parent))
+    }
+
+    reset() {
+        while (this.tails.length > 0) this.tails.pop()
+        this.head.x = GRID_WIDTH / 2
+        this.head.y = GRID_HEIGHT / 2
+        this.head.dir = Direction.RIGHT
     }
 }
 
 function ptc(v) {
-    return v * 32 + 10
+    return v * ELEMENT_SIZE + 10
 }
 
 const SNAKE = new Snake(GRID_WIDTH / 2, GRID_HEIGHT / 2)
+
+function checkPickupCollision() {
+    if (SNAKE.head.x === SNAKE.pickup.x && SNAKE.head.y === SNAKE.pickup.y) {
+        SNAKE.pickup.move()
+        SNAKE.addTail()
+    }
+}
+
+function checkSelfCollision() {
+    if (SNAKE.tails.filter(t => t.x === SNAKE.head.x && t.y === SNAKE.head.y).filter(t => !t.wait).length > 0) {
+        SNAKE.reset()
+    }
+}
+
+function checkWallCollision() {
+    if (SNAKE.head.x < 0 || SNAKE.head.x >= GRID_WIDTH || SNAKE.head.y < 0 || SNAKE.head.y >= GRID_HEIGHT) {
+        SNAKE.reset()
+    }
+}
 
 function draw() {
     BOARD_CTX.fillStyle = '#dddddd'
@@ -89,17 +114,20 @@ function draw() {
     BOARD_CTX.fillRect(10, 10, BOARD.width - 20, BOARD.height - 20)
 
     BOARD_CTX.fillStyle = '#61D224'
-    SNAKE.tails.forEach(t => BOARD_CTX.fillRect(ptc(t.x), ptc(t.y), 32, 32))
+    SNAKE.tails.forEach(t => BOARD_CTX.fillRect(ptc(t.x), ptc(t.y), ELEMENT_SIZE, ELEMENT_SIZE))
 
     BOARD_CTX.fillStyle = '#55B422'
-    BOARD_CTX.fillRect(ptc(SNAKE.head.x), ptc(SNAKE.head.y), 32, 32)
+    BOARD_CTX.fillRect(ptc(SNAKE.head.x), ptc(SNAKE.head.y), ELEMENT_SIZE, ELEMENT_SIZE)
 
     BOARD_CTX.fillStyle = '#ff3333'
-    BOARD_CTX.fillRect(ptc(SNAKE.pickup.x), ptc(SNAKE.pickup.y), 32, 32)
+    BOARD_CTX.fillRect(ptc(SNAKE.pickup.x), ptc(SNAKE.pickup.y), ELEMENT_SIZE, ELEMENT_SIZE)
 }
 
 function loop() {
     SNAKE.move()
+    checkPickupCollision()
+    checkWallCollision()
+    checkSelfCollision()
     draw()
     setTimeout(loop, 250)
 }
