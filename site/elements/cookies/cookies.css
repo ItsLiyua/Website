@@ -1,23 +1,24 @@
 body {
     background-color: #111111cc;
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(5px);
     position: fixed;
     top: 50vh;
     left: 50vw;
     text-align: center;
+    font-size: 2vh;
 }
 
 h1 {
-    padding: 0;
-}
-
-p {
-
+    padding: 0 0;
 }
 
 button {
-
+    border: none;
+    border-radius: 1vh;
+    background-color: yellow;
+    color: black;
+    padding: 1vh 1vw;
+    margin: 3vh 1vw 1vh 1vw;
 }
 
 .popup {
