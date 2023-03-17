@@ -1,0 +1,27 @@
+body {
+    background-color: #111111cc;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    text-align: center;
+}
+
+h1 {
+    padding: 0;
+}
+
+p {
+
+}
+
+button {
+
+}
+
+.popup {
+    background: #111111;
+    padding: 3vh 3vw;
+    border-radius: 1vh;
+}
