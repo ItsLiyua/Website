@@ -8,3 +8,6 @@ table {
     border: none;
     border-spacing: 20px;
 }
+.table-heading{
+    padding-bottom: 0;
+}
