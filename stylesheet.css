@@ -78,8 +78,9 @@ a:hover {
     position: fixed;
     top: 50vh;
     left: 50vw;
-    height: 100vh;
-    width: 100vw;
+    height: 0;
+    width: 0;
+    display: none;
     transform: translate(-50%, -50%);
     z-index: 1;
     background: transparent;

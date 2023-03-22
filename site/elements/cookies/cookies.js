@@ -1,12 +1,15 @@
 import * as c from "../../scripts/cookie-util.js";
-
-const COOKIES_ACCEPTED = "cookies-accepted"
-c.setCookieStatus(c.getCookie(COOKIES_ACCEPTED) === "true")
+import {
+    COOKIE_POPUP_HIDDEN,
+    COOKIE_POPUP_STATUS,
+    COOKIES_STATUS_ENABLED,
+    COOKIES_STATUS_NAME
+} from "../../scripts/constants.js";
 
 document.getElementById("accept").onclick = () => {
     close()
-    c.setCookieStatus(true)
-    c.setCookie(COOKIES_ACCEPTED, "true", 365)
+    sessionStorage.setItem(COOKIES_STATUS_NAME, COOKIES_STATUS_ENABLED)
+    c.setCookie(COOKIES_STATUS_NAME, COOKIES_STATUS_ENABLED, 365)
     console.log("Cookies accepted")
 }
 
@@ -16,9 +19,5 @@ document.getElementById("decline").onclick = () => {
 }
 
 function close() {
-    document.body.style.display = "none"
-    console.log("Closed")
-    sessionStorage.setItem("show-cookie-popup", "0")
+    sessionStorage.setItem(COOKIE_POPUP_STATUS, COOKIE_POPUP_HIDDEN)
 }
-
-if (c.getCookieStatus()) close()

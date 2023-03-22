@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <script defer src="../../scripts/loading.js"></script>
+    <script defer src="../../scripts/loading.js" type="module"></script>
     <link href="../../../stylesheet.css" rel="stylesheet" type="text/css">
     <link href="../content.css" rel="stylesheet" type="text/css">
     <link href="noise.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <iframe class="top" src="../../elements/heading/heading.html" title="Heading of the website"></iframe>
+<iframe id="cookies" class="cookies-popup" src="../../elements/cookies/cookies.html"></iframe>
 <div class="content">
     <p class="content-quote">
         "Perlin noise is a type of gradient noise developed by Ken Perlin in 1983. It has many uses, including but not
@@ -46,15 +47,21 @@
             </tr>
             <tr>
                 <td>Octaves</td>
-                <td>Octaves are different graphs generated with perlin noise which are combined into one to form a more natural or smooth graph.</td>
+                <td>Octaves are different graphs generated with perlin noise which are combined into one to form a more
+                    natural or smooth graph.
+                </td>
             </tr>
             <tr>
                 <td>Frequency</td>
-                <td>The frequency is the amount of values generated on the graph. This may also help provide a bigger sample number.</td>
+                <td>The frequency is the amount of values generated on the graph. This may also help provide a bigger
+                    sample number.
+                </td>
             </tr>
             <tr>
                 <td>Amplitude</td>
-                <td>The amplitude is the highest value reached by the graph at any point. This may be used to control the values that are being generated, such as for a heightmap.</td>
+                <td>The amplitude is the highest value reached by the graph at any point. This may be used to control
+                    the values that are being generated, such as for a heightmap.
+                </td>
             </tr>
         </table>
         <div class="content-box">

@@ -1,7 +1,7 @@
-let cookieStatus = false;
+import {COOKIES_STATUS_NAME, COOKIES_STATUS_ENABLED} from "./constants.js";
 
 export function setCookie(cname, cvalue, exdays) {
-    if (cookieStatus) {
+    if (sessionStorage.getItem(COOKIES_STATUS_NAME)===COOKIES_STATUS_ENABLED) {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = "expires=" + d.toUTCString();
@@ -18,12 +18,4 @@ export function getCookie(cname) {
         if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
     }
     return "";
-}
-
-export function setCookieStatus(val) {
-    cookieStatus = val
-}
-
-export function getCookieStatus() {
-    return cookieStatus
 }
