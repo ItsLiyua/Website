@@ -1,4 +1,4 @@
-import {getCookie, setCookie} from "/site/scripts/cookie-util.js"
+import {getCookie, setCookie} from "../../scripts/cookie-util.js"
 
 const BOARD = document.getElementById('board')
 const BOARD_CTX = BOARD.getContext('2d')
