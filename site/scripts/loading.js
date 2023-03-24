@@ -7,20 +7,22 @@ import {
     COOKIES_STATUS_NAME
 } from "./constants.js";
 
-function prefetch(url) {
-    const ln = document.createElement('link')
-    ln.rel = 'prefetch'
-    ln.href = url
-    document.head.appendChild(ln)
-}
-
+/**
+ * This line sets the website on every site.
+ */
 document.title = "Voxel Games"
 
+/**
+ * This block of code sets the website's favicon.
+ */
 const icon = document.createElement('link');
 icon.rel = 'icon'
 icon.href = '/assets/images/favicon.png'
 document.head.appendChild(icon)
 
+/**
+ * This block of code loads the cookie popup script.
+ */
 const cookiePopupScript = document.createElement("script");
 cookiePopupScript.type = "text/javascript";
 cookiePopupScript.src = "/Website/site/scripts/cookie-popup.js";
@@ -30,6 +32,4 @@ document.body.appendChild(cookiePopupScript);
 if (getCookie(COOKIES_STATUS_NAME) === COOKIES_STATUS_ENABLED) {
     sessionStorage.setItem(COOKIES_STATUS_NAME, COOKIES_STATUS_ENABLED)
     sessionStorage.setItem(COOKIE_POPUP_STATUS, COOKIE_POPUP_HIDDEN)
-} else {
-    sessionStorage.setItem(COOKIE_POPUP_STATUS, COOKIE_POPUP_SHOWN)
-}
+} else sessionStorage.setItem(COOKIE_POPUP_STATUS, COOKIE_POPUP_SHOWN)
