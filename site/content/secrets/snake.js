@@ -156,7 +156,9 @@ function loop() {
 document.addEventListener('keypress', event => {
     function changeDir(newDir) {
         if (newDir.x + SNAKE.head.dir.x !== 0 || newDir.y + SNAKE.head.dir.y !== 0) {
-            INPUT_QUEUE.push(newDir)
+            if (INPUT_QUEUE.length < 4) {
+                INPUT_QUEUE.push(newDir)
+            }
         }
     }
 
