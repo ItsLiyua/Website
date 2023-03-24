@@ -1,10 +1,13 @@
 #!/bin/bash
+echo Building website.
 sudo docker build -t website .
+echo Starting website.
 sudo docker run --rm -d --name website -p 8080:80 website:latest
 
-firefox http://localhost:8080/
+echo Opening firefox.
+firefox http://localhost:8080/ > /dev/null
 
-read -n 1 -p "Press any key to close the program." key
+read -r -n 1 -p "Press any key to close the program."
 
 echo Stopping website.
 sudo docker stop website > /dev/null

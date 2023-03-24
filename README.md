@@ -15,9 +15,19 @@ können.
 
 Der Titel, der im Browsertab angezeigt wird.
 
+### `<script/>`:
+
+Innerhalb eines `script` tags kann javascript definiert werden, was ausgeführt wird, sobald der `script`-tag geladen
+wird. Alternativ kann man diesem tag auch ein `src` attribut und `type="module"` setzen, um ein anderes javascript file
+zu laden und auszuführen. Zusätzlich kann auch noch das Attribut `defer` gesetzt werden, damit das skript nicht
+ausgeführt wird, wenn es geladen wird, sondern erst, wenn die gesamte website geladen ist.
+
 ### `<link>`:
 
-`link` wird zum Einbinden eines css stylesheets verwendet.
+`link` wird zum Einbinden eines css stylesheets verwendet. Wenn mehrere stylesheets eingebunden werden, werden doppelt
+definierte Attribute jeweils von dem später eingebundenen stylesheet überschrieben. Das `href` Attribut gibt an, wo der
+stylesheet liegt. Mit `rel="stylesheet"` wird angegeben, dass es sich um einen stylesheet handelt. Zusätzlich kann man
+noch `type="text/css"` setzen, um zu definieren, dass es sich um eine css Datei handelt.
 
 ### `<a/>`:
 
@@ -26,32 +36,29 @@ In den meisten Fällen ist der Inhalt ein Text, kann aber auch ein Bild oder and
 
 ### `<img>`:
 
-Wird verwendet, um ein Bild einzubinden.
+Wird verwendet, um ein Bild einzubinden. Hierbei müssen `src` und `alt` gesetzt werden. `src` gibt an, wo sich die
+Imagedatei befindet, die auf der Website eingebunden werden soll. Bei `alt` handelt es sich um einen Text, der angezeigt
+werden soll, wenn das Bild nicht gefunden werden kann. `alt` kann zusätzlich für Suchmaschinenoptimierung eingesetzt
+werden.
 
 ### `<iframe/>`:
 
-Ein iframe oder auch Inlineframe wird verwendet, um andere HTML-Elemente in einem definierten Bereich einzubinden.
+Ein iframe oder auch Inlineframe wird verwendet, um andere HTML-Elemente in einem definierten Bereich einzubinden. Auf
+unserer website werden iframes für das Cookiepopup, die Fußzeile und die Kopfzeile verwendet.
 
-## Verwendetes CSS:
+### `<table/>`:
 
-### Positionierung
+Innerhalb dieses tags wird eine Tabelle erstellt. Man kann Tabellen sowohl als tatsächliche Tabelle als auch als
+Werkzeug zum Erstellen von Spalten verwenden. Innerhalb einer Tabelle können `<tr/>`, `<td/>` und `<th/>` verwendet
+werden, um Reihen, Spalten und Titelzellen zu erstellen.
 
-- `margin`: Der Abstand um ein Element.
-- `padding`: Der Abstand des Inhalts eines Elements zur Außenwand des Elements.
-- `position`: Die CSS-Positionierungsfunktion, die verwendet wird, um die Elemente im Elternelement anzuordnen.
+### `<canvas/>`:
 
-### Font Konfiguration
+Auf einem `canvas` Element kann mit JavaScript gezeichnet werden. Wir verwenden es in dem Snake Spiel.
 
-- `font-family`: Die Schriftart, die wir für die Seite verwenden.
-- `font-size`: Die größe der Schrift auf der Seite.
-- `text-decoration`: Formatierungsanweisung für Texte (Unterstrichen, Fett, usw.)
+### `<button/>`:
 
-### Farben
-
-- `color`: Die Farbe des Elements.
-- `background-color`: Die Hintergrundfarbe hinter einem Element.
-
-### Border
+Ein `button` Element kann verwendet werden, um eine Aktion in einer JavaScript-Datei auszulösen.
 
 > ## Klassen:
 > Klassen sind Möglichkeiten Elementen Attributen zuzuweisen, ohne diese Attribute typabhängig zu machen. Sie können
