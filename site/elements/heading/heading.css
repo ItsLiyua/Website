@@ -12,6 +12,13 @@
     width: 20vw;
 }
 
+.icon-text {
+    float: left;
+    text-align: center;
+    height: 100vh;
+    line-height: 80vh
+}
+
 .text {
     font-size: 60vh;
     vertical-align: top;

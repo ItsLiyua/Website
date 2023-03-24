@@ -1,3 +1,7 @@
+/**
+ * This script switches the images used in the title bar when hovering the Home button or the image.
+ */
+
 const btn = document.getElementById("icon-button")
 const img = document.getElementById('icon-image')
 const text = document.getElementById('icon-text')
