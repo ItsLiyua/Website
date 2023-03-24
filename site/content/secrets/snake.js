@@ -141,6 +141,8 @@ function draw() {
 
     BOARD_CTX.fillStyle = '#ff3333'
     BOARD_CTX.fillRect(ptc(SNAKE.pickup.x), ptc(SNAKE.pickup.y), ELEMENT_SIZE, ELEMENT_SIZE)
+
+    document.getElementById('score').innerHTML = 'Score: ' + score + '<br>Highscore: ' + highscore
 }
 
 function loop() {
