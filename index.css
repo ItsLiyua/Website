@@ -1,5 +1,7 @@
 :root {
-    --bg: url('assets/images/background/screenshot_1.png');
+    --bg-light: url('assets/images/background/5-light.png');
+    --bg-dark: url('assets/images/background/5-dark.png');
+    --bg: var(--bg-dark);
 }
 
 .text {
