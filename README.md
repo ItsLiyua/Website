@@ -60,6 +60,11 @@ Auf einem `canvas` Element kann mit JavaScript gezeichnet werden. Wir verwenden 
 
 Ein `button` Element kann verwendet werden, um eine Aktion in einer JavaScript-Datei auszulösen.
 
+### `<span/>`:
+
+Ein `span` Element funktioniert wie ein `div`, allerdings ist es kein Block-Element, sondern ein Inline-Element. Damit
+kann man zum Beispiel Teile eines Textes innerhalb eines `p`-Elements Umstylen.
+
 > ## Klassen:
 > Klassen sind Möglichkeiten Elementen Attributen zuzuweisen, ohne diese Attribute typabhängig zu machen. Sie können
 > beliebig kombiniert werden. Man kann Klassen definieren, indem man in einem Stylesheet `.klassemmame {}` schreibt. In

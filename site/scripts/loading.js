@@ -7,6 +7,13 @@ import {
     COOKIES_STATUS_NAME
 } from "./constants.js";
 
+function loadScript(path) {
+    const script = document.createElement("script");
+    script.src = path;
+    script.type = "module"
+    document.body.appendChild(script);
+}
+
 /**
  * This line sets the website on every site.
  */
@@ -21,13 +28,13 @@ icon.href = '/assets/images/favicon.png'
 document.head.appendChild(icon)
 
 /**
- * This block of code loads the cookie popup script.
+ * Load the cookie-popup-script.
  */
-const cookiePopupScript = document.createElement("script");
-cookiePopupScript.type = "text/javascript";
-cookiePopupScript.src = "/Website/site/scripts/cookie-popup.js";
-cookiePopupScript.type = "module"
-document.body.appendChild(cookiePopupScript);
+loadScript("/Website/site/scripts/cookie-popup.js")
+/**
+ * Load the light-dark-mode-script.
+ */
+loadScript("/Website/site/scripts/lightdarkmode.js")
 
 if (getCookie(COOKIES_STATUS_NAME) === COOKIES_STATUS_ENABLED) {
     sessionStorage.setItem(COOKIES_STATUS_NAME, COOKIES_STATUS_ENABLED)

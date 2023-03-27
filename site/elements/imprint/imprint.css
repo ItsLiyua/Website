@@ -7,7 +7,7 @@
 }
 
 .imprint-gh {
-    padding-top: 20vh;
+    padding-top: 10vh;
     display: flex;
     justify-content: center;
 }
@@ -24,4 +24,13 @@
 .imprint-copyright {
     text-align: center;
     padding-top: 4vh;
+}
+
+#light, #dark {
+text-align: center;
+}
+
+#light:hover, #dark:hover {
+color: #dddddd;
+    text-decoration: underline;
 }

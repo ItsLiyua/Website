@@ -1,7 +1,13 @@
 :root {
-    --bg: url('assets/images/background/screenshot_3.png');
-    --accent: #10446f;
-    --accent-opaque: #10446f88;
+    --bg-light: url('assets/images/background/screenshot_2.png');
+    --bg-dark: url('assets/images/background/screenshot_3.png');
+    --bg: var(--bg-dark);
+    --accent-light: #d41919;
+    --accent-dark: #10446f;
+    --accent: var(--accent-dark);
+    --accent-opaque-light: #ff150080;
+    --accent-opaque-dark: #10446f88;
+    --accent-opaque: var(--accent-opaque-dark);
 }
 
 table {
