@@ -27,10 +27,11 @@
 }
 
 #light, #dark {
-text-align: center;
+    text-align: center;
+    user-select: none;
 }
 
 #light:hover, #dark:hover {
-color: #dddddd;
+    color: #dddddd;
     text-decoration: underline;
 }

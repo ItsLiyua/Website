@@ -1,5 +1,11 @@
 :root {
-    --bg: url('https://assets.rockpapershotgun.com/images/2019/08/Minecraft-shaders-1.14-Sildurs-Vibrant-Shaders.png');
-    --accent: #f02800;
-    --accent-opaque: #f2080088;
+    --bg-light: url('assets/images/background/3-light.png');
+    --bg-dark: url('assets/images/background/3-dark.png');
+    --bg: var(--bg-dark);
+    --accent-light: #f02800;
+    --accent-dark: #f02800;
+    --accent: var(--accent-dark);
+    --accent-opaque-light: #f2080088;
+    --accent-opaque-dark: #f2080088;
+    --accent-opaque: var(--accent-opaque-dark);
 }
