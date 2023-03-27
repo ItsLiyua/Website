@@ -36,6 +36,9 @@ loadScript("/Website/site/scripts/cookie-popup.js")
  */
 loadScript("/Website/site/scripts/lightdarkmode.js")
 
+/**
+ * If there is a cookie set that allows cookies on this website the popup won"t be shown.
+ */
 if (getCookie(COOKIES_STATUS_NAME) === COOKIES_STATUS_ENABLED) {
     sessionStorage.setItem(COOKIES_STATUS_NAME, COOKIES_STATUS_ENABLED)
     sessionStorage.setItem(COOKIE_POPUP_STATUS, COOKIE_POPUP_HIDDEN)
