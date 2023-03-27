@@ -11,7 +11,7 @@ echo.
 pause >nul
 
 echo Stopping website.
-docker container stop website
+docker container stop website >nul
 echo Stopped website.
 
 timeout /t 5
