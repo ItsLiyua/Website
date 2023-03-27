@@ -1,3 +1,6 @@
+/**
+ * A list of images of snakes for the side displays of the secret site.
+ */
 const IMAGES = [
     "https://www.24hamburg.de/bilder/2022/09/14/91787865/27294424-zwei-koenigskobras-zeigen-sich-in-voller-breite-dfe.jpg",
     "https://media0.faz.net/ppmedia/aktuell/2994436304/1.7524600/default-retina/bei-geoeffnetem-maul-werden.jpg",
@@ -10,6 +13,9 @@ const IMAGES = [
     "https://cdn.discordapp.com/attachments/1060986691399204864/1089487757610586112/images.jpg",
     "https://cdn.discordapp.com/attachments/1060986691399204864/1089487805568270457/images.jpg"
 ]
+/**
+ * A list of funfacts about snakes.
+ */
 const FUNFACTS = [
     "Schlangen in Flüssen oder Sümpfen beißen nicht, da sie sonst ertrinken würden",
     "Schlangen wachsen ihr ganzes leben lang",
@@ -22,6 +28,9 @@ const FUNFACTS = [
     "Schlangen die den genetischen Defekt haben mit zwei Köpfen geboren zu werden haben Probleme zu essen, da sich beide Köpfe um das Essen streiten"
 ]
 
+/**
+ * On page load there's two random funfacts and two random images selected and placed on the webpage.
+ */
 window.onload = () => {
     const randomTextIndex = Math.floor(Math.random() * FUNFACTS.length)
     document.getElementById("snake-text-1").innerText = FUNFACTS[randomTextIndex]
